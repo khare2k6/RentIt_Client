@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="NameValueView">
+    <attr name="leftLabel" format="string" />
+    <attr name="value" format="string" />
+    <attr name="leftLabelColor" format="reference" />
+</declare-styleable>
+
+    <declare-styleable name="CustomView">
+        <attr name="Viewtitle" format="string" />
+    </declare-styleable>
+</resources>

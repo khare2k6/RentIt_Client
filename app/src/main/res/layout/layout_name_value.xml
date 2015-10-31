@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/tv_label_view"
+    android:layout_width="wrap_content"
+    android:gravity="left"
+    android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_toRightOf="@id/tv_label_view"
+        android:id="@+id/tv_colon"
+        android:layout_width="wrap_content"
+        android:text=":"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_value_view"
+        android:layout_toRightOf="@id/tv_colon"
+        android:layout_marginLeft="10dip"
+        android:layout_width="wrap_content"
+        android:visibility="visible"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_value_view"
+        android:layout_toRightOf="@id/tv_colon"
+        android:layout_marginLeft="10dip"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

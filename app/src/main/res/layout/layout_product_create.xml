@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip">
+
+   <ImageButton
+    android:id="@+id/img_button"
+    android:layout_width="fill_parent"
+       android:src="@drawable/ic_add_image"
+    android:layout_height="300dip" />
+    <!-- title -->
+    <RelativeLayout
+        android:layout_below="@id/img_button"
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:src="@color/ColorHighlight" />
+
+        <TextView
+            android:id="@+id/tv_custom_view_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="5dip"
+            android:padding="2dip"
+            android:text="Unit"
+            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_unit_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:orientation="vertical">
+
+        <!-- Unit name-->
+        <EditText
+            android:id="@+id/et_unit_name"
+            android:layout_marginTop="5dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Name"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <!-- Unit Id-->
+        <!--<EditText
+            android:id="@+id/et_unit_id"
+            android:layout_marginTop="5dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unit Id"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" /> -->
+
+        <!-- Model number-->
+        <EditText
+            android:id="@+id/et_model_number"
+            android:layout_marginTop="5dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Model Number"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <!-- product link-->
+        <EditText
+            android:id="@+id/et_product_link"
+            android:layout_marginTop="5dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product hyperlink"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+    </LinearLayout>
+
+    <!-- title -->
+    <RelativeLayout
+        android:id="@+id/title_bar_2"
+        android:layout_below="@id/ll_unit_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:src="@color/ColorHighlight" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="5dip"
+            android:padding="2dip"
+            android:text="Product Details"
+            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_product_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar_2"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:orientation="vertical">
+
+        <!-- product date-->
+        <EditText
+            android:id="@+id/et_product_date"
+            android:layout_marginTop="10dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Purchase Date"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <!-- per day rent-->
+        <EditText
+            android:id="@+id/et_product_rent"
+            android:layout_marginTop="10dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Per Day Rent"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <!-- security deposit-->
+        <EditText
+            android:id="@+id/et_security_deposit"
+            android:layout_marginTop="10dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Security Deposit"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <!-- minimum rental prediod-->
+        <EditText
+            android:id="@+id/et_min_rental_period"
+            android:layout_marginTop="10dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Minimum Retnal period"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <!-- sending isAvaialble as true and product id from code directly-->
+    </LinearLayout>
+        <Button
+            android:layout_below="@id/ll_product_details"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_create_product"
+            android:backgroundTint="@color/ColorPrimary"
+            android:layout_alignParentBottom="true"
+            android:text="Create Product"/>
+</RelativeLayout>
+</ScrollView>

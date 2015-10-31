@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Project R</string>
+    <string name="title_login">Rent it</string>
+    <string name="title_activity_login">LActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_prdocut_detail_view">PrdocutDetailView</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_request_sent">Request Sent</string>
+    <string name="title_request_updated">Updated</string>
+    <string name="title_request_error">Error</string>
+    <string name="title_product_created">Product Created</string>
+    <string name="title_ok">Ok</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    <string name="title_set_ip">Set New Server IP</string>
+    <string name="title_already_rented">Already Updated</string>
+    <string name="msg_set_new_ip">Set new IP for the remote server</string>
+    <string name="msg_already_rented">This prduct is already in RENTED state</string>
+    <string name="msg_request_sent">Your request has been sent to the owner successfully</string>
+    <string name="msg_product_created">Your product created successfully</string>
+    <string name="msg_error">Some error occured,please try later</string>
+
+    <string name="msg_request_status_updated">Your request status updated successfully</string>
+    <!-- yourTextView.setText(String.format(getString(R.string.title_rent_request_received), s1, s2));-->
+    <string name="title_rent_request_received" formatted="false">%s would like to rent your product %s</string>
+    <string name="title_rent_request_sent" formatted="false">Your request for <font color='red'>%s</font> is pending on <font color='red'>%s</font></string>
+</resources>
